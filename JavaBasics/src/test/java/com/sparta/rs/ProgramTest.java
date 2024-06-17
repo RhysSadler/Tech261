@@ -11,17 +11,17 @@ public class ProgramTest {
     @DisplayName("given a time of 21, then the greeting should be Good Evening")
     void checkThat21GivesGoodEvening(){
         int time = 21;
-        String exspectedGreeting = "Good evening!";
+        String expectedGreeting = "Good evening!";
         String actualGreeting = Program.getGreeting(time);
-        Assertions.assertEquals(exspectedGreeting, actualGreeting);
+        Assertions.assertEquals(expectedGreeting, actualGreeting);
     }
     @Test
     @DisplayName("given a time of 14, then the greeting should be Good afternoon!")
     void checkThat11GivesGoodAfternoon(){
         int time = 14;
-        String exspectedGreeding = "Good afternoon!";
+        String expectedGreeting = "Good afternoon!";
         String actualGreeting = Program.getGreeting(time);
-        Assertions.assertEquals(exspectedGreeding,actualGreeting);
+        Assertions.assertEquals(expectedGreeting,actualGreeting);
     }
     @Test
     public void testAfter24Hours_throwsExceptionForTimeGreaterThan24() {
