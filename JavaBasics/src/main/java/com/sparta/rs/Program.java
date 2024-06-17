@@ -8,10 +8,18 @@ public class Program {
 
     }
     public static void after24Hours (int timeOfDay) throws preOrPast24HoursException {
-        if (timeOfDay > 24 || timeOfDay < 0){
+        if (timeOfDay > 24){
             throw new preOrPast24HoursException();
         }
     }
+
+    public static void pre24Hours (int timeOfDay) throws preOrPast24HoursException {
+        if (timeOfDay < 0){
+            throw new preOrPast24HoursException();
+        }
+    }
+
+
     public static String getGreeting(int timeOfDay) {
         String greeting;
         if (timeOfDay >= 5 && timeOfDay <= 12) {
