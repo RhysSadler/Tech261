@@ -34,7 +34,7 @@ public class ProgramTest {
     @Test
     public void testAfter24Hours_throwsExceptionForTimeLessThan0() {
         Exception exception = assertThrows(preOrPast24HoursException.class, () -> {
-            Program.after24Hours(-1);
+            Program.pre24Hours(-1);
         });
         assertNotNull(exception);
     }

@@ -2,8 +2,9 @@ package com.sparta.rs;
 // read , maintain, test - needs for factorisation.
 public class Program {
     public static void main(String[] args) throws preOrPast24HoursException {
-        int timeOfDay = 25;
+        int timeOfDay = -1;
         after24Hours(timeOfDay);
+        pre24Hours(timeOfDay);
         System.out.println(getGreeting(timeOfDay));
 
     }
