@@ -7,8 +7,8 @@ public class Program {
         after24Hours(timeOfDay);
         pre24Hours(timeOfDay);
         System.out.println(getGreeting(timeOfDay));
-
     }
+
     public static void after24Hours (int timeOfDay) throws preOrPast24HoursException {
         if (timeOfDay > 24){
             throw new preOrPast24HoursException();
