@@ -1,31 +1,16 @@
 package com.sparta.rs;
 
-public class Dog {
-    private String name;
-    private String breed;
-    private int age;
+public class Dog extends Animal{
 
     public Dog(String name, String breed, int age) {
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
+        super(name, breed, age);
     }
+    // overload - name has to be that same
+    //1. return type
+    //2. type of parameters
+    //3 order of the parameters
 
-    public String getName() {
-        return name;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
-
-    public int getAge() {
-        return age;
-    }
-    public static void main(String[] args) {
-        //int age = 5
-        Dog max = new Dog("Max", "Terrier", 12);
-        Dog fido = new Dog("fido", "German Shepard", 2);
-        System.out.println(max.getAge());
+    public void play(String name) {
+        System.out.println(super.getName() + " wants to play with " + name);
     }
 }
