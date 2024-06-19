@@ -1,11 +1,10 @@
 package abstractClass;
 
 public interface Trainable{
-    public default boolean train() {
+    default void train() {
         System.out.println("We like to train");
-        return false;
     }
-    public default void study() {
+    default void study() {
         System.out.println("We like to study");
     }
 }

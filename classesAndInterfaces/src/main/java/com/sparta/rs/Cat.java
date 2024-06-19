@@ -22,6 +22,7 @@ public class Cat extends Animal{
 
     @Override
     public void drink() {
+        Drinkable.doSomething();
 
     }
 

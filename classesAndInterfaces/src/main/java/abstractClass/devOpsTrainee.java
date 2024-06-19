@@ -5,7 +5,7 @@ public class devOpsTrainee extends JavaTrainee implements Trainable{
     private String certifications;
     private String projects;
 
-    public devOpsTrainee(String name, int age, String email, int phone, String experiences, String certifications, String project, String github) {
+    public devOpsTrainee(String name, int age, String email, String phone, String experiences, String certifications, String project, String github) {
         super(name, age, email, phone, experiences, certifications, project, github);
         this.experiences = experiences;
         this.certifications = certifications;

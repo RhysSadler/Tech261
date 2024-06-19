@@ -1,48 +1,48 @@
 package abstractClass;
 
-public class Trainee {
+public abstract class Trainee {
     private String name;
     private int age;
     private String email;
-    private Integer phone;
+    private String phone;
 
-    public Trainee(String name, int age, String email, int phone) {
+    public Trainee(String name, int age, String email, String phone) {
         this.name = name;
         this.age = age;
         this.email = email;
         this.phone = phone;
     }
 
-    public String getName() {
-        return name;
-    }
+    //public String getName() {
+    //    return name;
+    //}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    //public void setName(String name) {
+    //    this.name = name;
+    //}
 
-    public int getAge() {
-        return age;
-    }
+    //public int getAge() {
+   //     return age;
+    //}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    //public void setAge(int age) {
+    //    this.age = age;
+    //}
 
-    public String getEmail() {
-        return email;
-    }
+    //public String getEmail() {
+    //    return email;
+    //}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    //public void setEmail(String email) {
+    //    this.email = email;
+    //}
 
-    public int getPhone() {
-        return phone;
-    }
+    //public int getPhone() {
+    //    return phone;
+    //}
 
-    public void setPhone(int phone) {
-        this.phone = phone;
-    }
+    //public void setPhone(int phone) {
+    //    this.phone = phone;
+    //}
 
 }

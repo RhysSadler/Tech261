@@ -6,7 +6,7 @@ public class JavaTrainee extends Trainee implements Trainable{
     private String project;
     private String github;
 
-    public JavaTrainee(String name, int age, String email, int phone, String experiences, String certifications, String project, String github) {
+    public JavaTrainee(String name, int age, String email, String phone, String experiences, String certifications, String project, String github) {
         super(name, age, email, phone);
         this.experiences = experiences;
         this.certifications = certifications;
@@ -46,10 +46,10 @@ public class JavaTrainee extends Trainee implements Trainable{
     public void setGithub(String github) {
         this.github = github;
     }
+
     @Override
-    public boolean train() {
+    public void train() {
         Trainable.super.train();
-        return false;
     }
 
     @Override
@@ -57,5 +57,5 @@ public class JavaTrainee extends Trainee implements Trainable{
         System.out.println("JavaTrainee is studying");
     }
 
-    
+
 }
