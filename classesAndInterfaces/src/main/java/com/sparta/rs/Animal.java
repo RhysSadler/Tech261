@@ -1,6 +1,6 @@
 package com.sparta.rs;
 //State and behaviour
-public abstract class Animal {
+public abstract class Animal implements Drinkable{
     private String name;
     private String breed;
     private int age;
@@ -37,4 +37,7 @@ public abstract class Animal {
     public void play() {
         System.out.println(name + " want to play");
     }
+    public abstract void eat();
+        //System.out.println("animal is eating"); //everyone is overriding
+
 }

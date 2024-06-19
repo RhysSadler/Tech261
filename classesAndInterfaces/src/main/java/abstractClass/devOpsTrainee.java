@@ -1,6 +1,6 @@
 package abstractClass;
 
-public class devOpsTrainee extends JavaTrainee{
+public class devOpsTrainee extends JavaTrainee implements Trainable{
     private String experiences;
     private String certifications;
     private String projects;

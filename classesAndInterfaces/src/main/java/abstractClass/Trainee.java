@@ -4,7 +4,7 @@ public class Trainee {
     private String name;
     private int age;
     private String email;
-    private int phone;
+    private Integer phone;
 
     public Trainee(String name, int age, String email, int phone) {
         this.name = name;
