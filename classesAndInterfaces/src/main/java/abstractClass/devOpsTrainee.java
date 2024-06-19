@@ -1,6 +1,6 @@
 package abstractClass;
 
-public class devOpsTrainee extends JavaTrainee implements Trainable{
+public class devOpsTrainee extends JavaTrainee {
     private String experiences;
     private String certifications;
     private String projects;
@@ -39,4 +39,5 @@ public class devOpsTrainee extends JavaTrainee implements Trainable{
     public void setProjects(String projects) {
         this.projects = projects;
     }
+
 }

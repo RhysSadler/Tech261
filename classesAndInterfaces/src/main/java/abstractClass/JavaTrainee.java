@@ -1,6 +1,6 @@
 package abstractClass;
 
-public class JavaTrainee extends Trainee implements Trainable{
+public class JavaTrainee extends Trainee {
     private String experiences;
     private String certifications;
     private String project;
@@ -47,14 +47,14 @@ public class JavaTrainee extends Trainee implements Trainable{
         this.github = github;
     }
 
-    @Override
+
     public void train() {
-        Trainable.super.train();
+        Trainable.train();
     }
 
-    @Override
+
     public void study() {
-        System.out.println("JavaTrainee is studying");
+        Trainable.study();
     }
 
 

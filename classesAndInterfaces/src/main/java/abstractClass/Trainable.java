@@ -1,10 +1,10 @@
 package abstractClass;
 
 public interface Trainable{
-    default void train() {
-        System.out.println("We like to train");
+    static void train() {
+        System.out.println("I am training");
     }
-    default void study() {
-        System.out.println("We like to study");
+    static void study() {
+        System.out.println("I am studying");
     }
 }

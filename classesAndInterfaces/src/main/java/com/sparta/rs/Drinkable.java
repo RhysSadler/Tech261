@@ -13,7 +13,7 @@ public interface Drinkable extends sleepable{
         System.out.println("I am print for an interface");
     }
 
-    public static void doSomething(){
+    static void doSomething(){
         System.out.println("Static method from an interface");
     }
 
