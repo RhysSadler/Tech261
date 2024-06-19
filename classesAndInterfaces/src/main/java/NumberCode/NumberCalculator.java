@@ -6,12 +6,12 @@ public class NumberCalculator {
         int multiplier = 1;
 
         for (int i = numbers.length -1; i >=0; i--){
-            finalNumber += numbers[i] * multiplier;
-            multiplier *= (int) Math.pow(10, Integer.toString(numbers[i]).length());
+            int currentNumber = Math.abs(numbers[i]);
+            finalNumber +=  currentNumber * multiplier;
+            multiplier *= (int) Math.pow(10, Integer.toString(currentNumber).length());
         }
 
         return finalNumber;
     }
 }
 
-    
