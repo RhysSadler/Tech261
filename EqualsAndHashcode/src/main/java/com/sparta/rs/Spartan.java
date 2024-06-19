@@ -35,7 +35,9 @@ public class Spartan {
         return Objects.equals(firstName, spartan.firstName) && Objects.equals(lastName, spartan.lastName);
     }
 
-    @Override
+
+
+  @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName);
     }
