@@ -1,33 +1,29 @@
 package abstractClass;
 
-public class devOpsTrainee extends JavaTrainee {
+public class devOpsTrainee extends Trainee {
     private String experiences;
     private String certifications;
     private String projects;
 
-    public devOpsTrainee(String name, int age, String email, String phone, String experiences, String certifications, String project, String github) {
-        super(name, age, email, phone, experiences, certifications, project, github);
+    public devOpsTrainee(String name, int age, String email, String phone, String experiences, String certifications, String projects) {
+        super(name, age, email, phone);
         this.experiences = experiences;
         this.certifications = certifications;
-        this.projects = project;
+        this.projects = projects;
     }
 
-    @Override
     public String getExperiences() {
         return experiences;
     }
 
-    @Override
     public void setExperiences(String experiences) {
         this.experiences = experiences;
     }
 
-    @Override
     public String getCertifications() {
         return certifications;
     }
 
-    @Override
     public void setCertifications(String certifications) {
         this.certifications = certifications;
     }
@@ -40,4 +36,11 @@ public class devOpsTrainee extends JavaTrainee {
         this.projects = projects;
     }
 
+    public void train() {
+        Trainable.train();
+    }
+
+    public void study() {
+        Trainable.study();
+    }
 }

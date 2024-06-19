@@ -52,7 +52,6 @@ public class JavaTrainee extends Trainee {
         Trainable.train();
     }
 
-
     public void study() {
         Trainable.study();
     }

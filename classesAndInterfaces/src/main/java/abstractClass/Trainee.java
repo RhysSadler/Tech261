@@ -13,6 +13,7 @@ public abstract class Trainee implements Trainable{
         this.phone = phone;
     }
 
+
 //    public String getName() {
 //        return name;
 //    }
