@@ -64,5 +64,14 @@ public class NumberCalculatorTests {
 
         Assertions.assertEquals(expected, actual);
     }
+    @ParameterizedTest
+    @CsvSource({"1,20,3,4, 12034",
+              "1,31,0,1, 13101",
+            "9,49,9,0, 94990"})
+    void GivenThereIsMoreDigitsThenOneInAParameterReturnWithThatExtraNumber(int num1,int num2, int num3, int num4, int expected) {
+        int actual = NumberCalculator.getCalculatedValue(new int[]{num1, num2, num3, num4});
 
+        Assertions.assertEquals(expected, actual);
+
+    }
 }
