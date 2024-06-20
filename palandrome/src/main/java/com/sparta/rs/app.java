@@ -1,9 +1,18 @@
 package com.sparta.rs;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class app {
     public static void main(String[] args) {
-        String test = "madam";
-        boolean result = Palendrome.palandrome(test);
-        System.out.println(result);
+        String test = "Racecar, i love my Racecar, it make me feel cool!";
+        String preProcessing = Sentence.fixer(test);
+        String[] postPrecessing = Sentence.splitter(preProcessing);
+        String[] pals = Palendrome.palandrome(postPrecessing);
+        String theBigOne = BiggerFinder.big(pals);
+        System.out.println(theBigOne);
+
+
     }
+
 }
