@@ -1,5 +1,4 @@
 package com.sparta.rs;
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -24,14 +23,5 @@ public class Sentence {
 
         return input.split(" ");
     }
-
-    public static void main(String[] args) {
-        String input = "Hello, world! 123";
-        String midProcessed = fixer(input);
-        String[] postProcessed = splitter(midProcessed);
-        System.out.println(postProcessed);
-
-    }
-
 
 }
